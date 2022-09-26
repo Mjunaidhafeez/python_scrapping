@@ -26,6 +26,6 @@ class EncountersClass():
                     Table_dict = {'Patient Id': patientID,'Encounter Id':encounterid, 'EncounterDate': Encounter_Date_Type,'Chiefcomplaint': chiefcomplaint,'Location':location,'Provider': provider,'Type of Visit':typevisit,'Status':status}
                     i += 1
                     df = pd.DataFrame((Table_dict), index=[0])
-                    f=df.to_csv('Encounters2.csv', mode='a', index=False, header=False)
+                    df.to_csv('H:\\Office_Allay\\All_CSV_Files\\Patient_Encounters.csv', mode='a', index=False, header=False)
         except:
             ('Error')

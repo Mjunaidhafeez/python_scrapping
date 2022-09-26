@@ -26,6 +26,6 @@ class DocumentClass():
                     Table_dict = {'Patient Id': patientID,'documentid':documentid, 'document_Date': document_Date,'documenttitle': documenttitle,'documenttype':documenttype,'mediatype': mediatype,'dateadd':dateadd,'Status':status}
                     i += 1
                     df = pd.DataFrame((Table_dict), index=[0])
-                    f=df.to_csv('Document.csv', mode='a', index=False, header=False)
+                    f=df.to_csv('H:\\Office_Allay\\All_CSV_Files\\Patient_Document.csv', mode='a', index=False, header=False)
         except Exception as e:
             print(e)

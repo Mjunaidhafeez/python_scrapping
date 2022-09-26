@@ -73,7 +73,7 @@ def patientchartpage_test():
         else:
             print('============================= ' + str(r) + ' =============================')
             print('This patient data not exist..' + str(patientid))
-            with open('H:\Office_Allay\All_CSV_Files\Incompleteids.csv', 'a') as f:
+            with open('H:\\Office_Allay\\No_Record_csv\\No_Record.csv', 'a') as f:
                 f.write(str(patientid) + "\n")
                 f.close()
             ptc.cleartxtpatientid()
